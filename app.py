@@ -17,7 +17,7 @@ feature2 = st.number_input("Feature 2", value=0)
 
 if st.button("Predict"):
     payload = {"feature1": feature1, "feature2": feature2}
-    prediction = invoke_sagemaker_endpoint("YOUR_ENDPOINT_NAME", payload)
+    prediction = invoke_sagemaker_endpoint("YOUR_ENDPOINT_NAME", payload) #Replace YOUR_ENDPOINT_NAME with your SageMaker endpoint name.
     st.success(f"Prediction: {prediction}")
 
 # Batch predictions
